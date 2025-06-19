@@ -12,7 +12,7 @@ export default function OdemeYontemleri({ secili, onSec }) {
       {yontemler.map((y) => (
         <label
           key={y.id}
-          className={\`block border p-3 rounded cursor-pointer \${secili === y.id ? 'border-blue-500' : 'border-gray-300'}\`}
+          className={`block border p-3 rounded cursor-pointer ${secili === y.id ? 'border-blue-500' : 'border-gray-300'}`}
         >
           <input
             type="radio"
